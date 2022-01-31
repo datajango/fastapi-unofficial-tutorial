@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "/g/ProgramData/Anaconda3/envs/fastapi39/python",
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "--pdb"
+    ],
+    "git.ignoreLimitWarning": false
+}

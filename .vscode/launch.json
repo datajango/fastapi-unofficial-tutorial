@@ -1,0 +1,78 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+      {
+        "name": "PyTest",
+        "type": "python",
+        "request": "launch",
+        "stopOnEntry": false,
+        "module": "pytest",
+        "args": [
+            "-sv"
+        ],
+        "cwd": "${workspaceRoot}",
+        "env": {},
+        "envFile": "${workspaceRoot}/.env",
+        "debugOptions": [
+            "WaitOnAbnormalExit",
+            //"WaitOnNormalExit",
+            "RedirectOutput"
+        ]
+    },
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "01_first_steps",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/01_first_steps",
+      "args": ["main:app", "--reload"],
+      "jinja": true
+    },
+    {
+      "name": "02_path_parameters",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/02_path_parameters",
+      "args": ["main:app", "--reload"],
+      "jinja": true
+    },
+    {
+      "name": "03_query_parameters",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/03_query_parameters",
+      "args": ["main:app", "--reload"],
+      "jinja": true
+    },
+    {
+      "name": "04_request_body",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/04_request_body",
+      "args": ["main:app", "--reload"],
+      "jinja": true
+    },
+    {
+      "name": "05_query_parameters_and_string_validations",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/05_query_parameters_and_string_validations",
+      "args": ["main:app", "--reload"],
+      "jinja": true
+    }
+  ]
+}
