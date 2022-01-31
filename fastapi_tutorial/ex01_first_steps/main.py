@@ -51,7 +51,3 @@ async def root(request: Request):
         return {
             "method": 'HEAD',
         }
-    elif method=='TRACE':
-        return {
-            "method": 'TRACE',
-        }

@@ -43,6 +43,25 @@ Running uvicorn 0.15.0 with CPython 3.9.7 on Windows
     pytest
     ```
 
+1. To run just the fastapi_tutorial tests
+
+    ```
+    pytest -vv --cov-report html  --cov=fastapi_tutorial
+    ```
+
+1. To generate a coverage report of all tutorials and playgrounds
+
+    ```
+    pytest -vv --cov-report html  --cov=fastapi_tutorial
+    pytest -vv --cov-report html  --cov=pydantic_playground --cov-append
+    pytest -vv --cov-report html  --cov=pytest_playground --cov-append
+    pytest -vv --cov-report html  --cov=starlette_playground --cov-append
+    pytest -vv --cov-report html  --cov=typing_playground --cov-append
+    ```
+
+    Which results in a coverage report of all unit tests.
+
+
 ## Testing each server with httpie or Postman.
 
 1. cd fastapi_tutorial

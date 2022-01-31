@@ -50,7 +50,3 @@ def test_head_main():
     response = client.head("/")
     assert response.status_code == 200
 
-def test_trace_main():
-    response = client.head("/")
-    assert response.status_code == 200
-
