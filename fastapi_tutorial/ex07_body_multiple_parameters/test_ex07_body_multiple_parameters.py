@@ -64,8 +64,6 @@ def test_items_02():
     assert response.status_code == 200
     assert response.json() == response_data
 
-
-
 def test_items_03():
 
     item_id = 100
