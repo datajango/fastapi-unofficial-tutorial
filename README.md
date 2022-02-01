@@ -62,7 +62,7 @@ Running uvicorn 0.15.0 with CPython 3.9.7 on Windows
     Which results in a coverage report of all unit tests.
 
 
-## Testing each server with httpie or Postman.
+## Testing each server with httpie
 
 1. cd fastapi_tutorial
 1. cd ex01_first_steps
@@ -202,3 +202,73 @@ Running uvicorn 0.15.0 with CPython 3.9.7 on Windows
             "method": "TRACE"
         }
         ```
+
+## ex02_path_parameters
+
+    ```
+    pytest -vv fastapi_tutorial\ex02_path_parameters\test_ex02_path_parameters.py
+    ```
+
+## ex03_query_parameters
+
+    ```
+    pytest -vv fastapi_tutorial\ex03_query_parameters\test_ex03_query_parameters.py
+    ```
+
+## ex04_request_body
+
+    ```
+    pytest -vv fastapi_tutorial\ex04_request_body\test_ex04_request_body.py
+    ```
+
+## ex05_query_parameters_and_string_validations
+
+    ```
+    pytest -vv fastapi_tutorial\ex05_query_parameters_and_string_validations\test_ex05_query_parameters_and_string_validations.py
+    ```
+
+## ex06_path_parameters_and_numeric_validations
+
+    ```
+    pytest -vv fastapi_tutorial\ex06_path_parameters_and_numeric_validations\test_ex06_path_parameters_and_numeric_validations.py
+    ```
+
+## ex07_body_multiple_parameters
+
+    ```
+    pytest -vv fastapi_tutorial\ex07_body_multiple_parameters\test_ex07_body_multiple_parameters.py
+    ```
+
+## ex08_body_fields
+
+    ```
+    pytest -vv fastapi_tutorial\ex08_body_fields\test_ex08_body_fields.py
+    ```
+
+## ex09_body_nested_models
+
+    ```
+    pytest -vv fastapi_tutorial\ex09_body_nested_models\test_ex09_body_nested_models.py
+    ```
+
+## ex10_declare_request_example_data
+
+1. There are no unit test for this section
+1. run server
+1. visit [Docs](http://127.0.0.1:8000/docs#/)
+![Example JSON](./ex10_declare_request_example_data.png "Example JSON")
+
+
+## ex11_extra_data_types
+
+This is a deceptively deep section.  FastAPI's abilities to use different datatypes relieve just how much the Python language itself is in flux.  The differences between Python 3.5 to Python 3.11 are different enough to force the FastAPI documentation to include in some cases three versions of the same FastAPi code.
+
+I am going with Python 3.6 and 3.9.  Python 3.10 and 3.11 seem stable enough but I cab only fight some many battles at once.
+I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
+
+1. [Extra Data Types](https://fastapi.tiangolo.com/tutorial/extra-data-types/)
+1. Runninng the unit tests
+
+    ```
+    pytest -vv fastapi_tutorial\ex11_extra_data_types\test_ex11_extra_data_types.py
+    ```

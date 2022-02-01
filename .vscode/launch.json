@@ -30,47 +30,56 @@
       "console": "integratedTerminal"
     },
     {
-      "name": "01_first_steps",
+      "name": "ex01_first_steps",
       "type": "python",
       "request": "launch",
       "module": "uvicorn",
-      "cwd": "${workspaceFolder}/fastapi_tutorial/01_first_steps",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/ex01_first_steps",
       "args": ["main:app", "--reload"],
       "jinja": true
     },
     {
-      "name": "02_path_parameters",
+      "name": "ex02_path_parameters",
       "type": "python",
       "request": "launch",
       "module": "uvicorn",
-      "cwd": "${workspaceFolder}/fastapi_tutorial/02_path_parameters",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/ex02_path_parameters",
       "args": ["main:app", "--reload"],
       "jinja": true
     },
     {
-      "name": "03_query_parameters",
+      "name": "ex03_query_parameters",
       "type": "python",
       "request": "launch",
       "module": "uvicorn",
-      "cwd": "${workspaceFolder}/fastapi_tutorial/03_query_parameters",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/ex03_query_parameters",
       "args": ["main:app", "--reload"],
       "jinja": true
     },
     {
-      "name": "04_request_body",
+      "name": "ex04_request_body",
       "type": "python",
       "request": "launch",
       "module": "uvicorn",
-      "cwd": "${workspaceFolder}/fastapi_tutorial/04_request_body",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/ex04_request_body",
       "args": ["main:app", "--reload"],
       "jinja": true
     },
     {
-      "name": "05_query_parameters_and_string_validations",
+      "name": "ex05_query_parameters_and_string_validations",
       "type": "python",
       "request": "launch",
       "module": "uvicorn",
-      "cwd": "${workspaceFolder}/fastapi_tutorial/05_query_parameters_and_string_validations",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/ex05_query_parameters_and_string_validations",
+      "args": ["main:app", "--reload"],
+      "jinja": true
+    },
+    {
+      "name": "ex10_declare_request_example_data",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/ex10_declare_request_example_data",
       "args": ["main:app", "--reload"],
       "jinja": true
     }
