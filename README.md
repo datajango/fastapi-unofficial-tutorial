@@ -351,3 +351,8 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
     pytest -vv fastapi_tutorial\ex15_extra_models\test_ex15_extra_models.py
     ```
 
+## ex16_response_status_code
+
+    ```
+    pytest -vv fastapi_tutorial\ex16_response_status_code\test_ex16_response_status_codes.py
+    ```
