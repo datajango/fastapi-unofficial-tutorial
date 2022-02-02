@@ -338,3 +338,9 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
                     name, value = header
                     self.headers[to_native_string(name)] = value
     ```
+
+## ex14_response_model
+
+    ```
+    pytest -vv fastapi_tutorial\ex14_response_model\test_ex14_response_model.py
+    ```
