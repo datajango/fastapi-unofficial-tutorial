@@ -356,3 +356,10 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
     ```
     pytest -vv fastapi_tutorial\ex16_response_status_code\test_ex16_response_status_codes.py
     ```
+
+## ex17_form_data
+
+    ```
+    pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
+    ```
+
