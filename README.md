@@ -272,3 +272,65 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
     ```
     pytest -vv fastapi_tutorial\ex11_extra_data_types\test_ex11_extra_data_types.py
     ```
+
+## ex12_cookie_parameters
+
+    ```
+    pytest -vv fastapi_tutorial\ex12_cookie_parameters\test_ex12_cookie_parameters.py
+    ```
+
+## ex13_header_parameters
+
+Since the TestClient does not allow for duplicate headers to be sent, I will test using httpie.
+
+```
+http GET http://127.0.0.1:8000/items2/ X-Token:foo
+```
+Returns
+```
+HTTP/1.1 200 OK
+content-length: 26
+content-type: application/json
+date: Wed, 02 Feb 2022 14:43:43 GMT
+server: uvicorn
+
+{
+    "X-Token values": [
+        "foo"
+    ]
+}
+```
+
+```
+http GET http://127.0.0.1:8000/items2/ X-Token:foo X-Token:bar
+```
+Returns
+```
+HTTP/1.1 200 OK
+content-length: 32
+content-type: application/json
+date: Wed, 02 Feb 2022 14:44:57 GMT
+server: uvicorn
+
+{
+    "X-Token values": [
+        "foo",
+        "bar"
+    ]
+}
+```
+
+To fix this bug the fastapi39\Lib\site-packages\requests\models.py lines 446 to 455 need to look for either a dictionary or a list, because dictionaries do not allow duplicate keys.
+
+```
+    def prepare_headers(self, headers):
+        """Prepares the given HTTP headers."""
+
+        self.headers = CaseInsensitiveDict()
+        if headers:
+            for header in headers.items():
+                # Raise exception on invalid header value.
+                check_header_validity(header)
+                name, value = header
+                self.headers[to_native_string(name)] = value
+```

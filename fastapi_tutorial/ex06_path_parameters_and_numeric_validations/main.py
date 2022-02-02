@@ -18,7 +18,7 @@ async def read_items(
     return results
 
 @app.get("/items1/{item_id}")
-async def read_items(
+async def read_items1(
     item_id: int = Path(...,
         title="The ID of the item to get",
         ge=1, le=1000),
@@ -33,7 +33,7 @@ async def read_items(
     return results
 
 @app.get("/items2/{item_id}")
-async def read_items(
+async def read_items2(
     item_id: int = Path(...,
         title="The ID of the item to get",
         ge=1, le=1000),

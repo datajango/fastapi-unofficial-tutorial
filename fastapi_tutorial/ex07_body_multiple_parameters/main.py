@@ -31,19 +31,19 @@ async def update_item(
     return results
 
 @app.put("/items1/{item_id}")
-async def update_item(item_id: int, item: Item, user: User):
+async def update_item1(item_id: int, item: Item, user: User):
     results = {"item_id": item_id, "item": item, "user": user}
     return results
 
 @app.put("/items2/{item_id}")
-async def update_item(item_id: int, item:
+async def update_item2(item_id: int, item:
     Item, user: User,
     importance: int = Body(...)):
     results = {"item_id": item_id, "item": item, "user": user, "importance": importance}
     return results
 
 @app.put("/items3/{item_id}")
-async def update_item(
+async def update_item3(
     *,
     item_id: int,
     item: Item,
@@ -62,7 +62,7 @@ async def update_item(
     return results
 
 @app.put("/items4/{item_id}")
-async def update_item(item_id: int,
+async def update_item4(item_id: int,
     item: Item = Body(..., embed=True)):
     results = {
         "item_id": item_id,

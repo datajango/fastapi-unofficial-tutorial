@@ -20,7 +20,7 @@ async def create_item(item: Item):
     return item_dict
 
 @app.post("/items/{item_id}")
-async def create_item(item_id: int, item: Item, q: Optional[str] = None):
+async def create_item1(item_id: int, item: Item, q: Optional[str] = None):
     item_dict = item.dict()
     item_dict.update({"id": item_id})
     if item.tax:

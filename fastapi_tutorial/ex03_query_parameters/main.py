@@ -23,7 +23,7 @@ async def read_item(request: Request, skip: int = 0, limit: int = 10):
     return fake_items_db[skip : skip + limit]
 
 @app.get("/items/{item_id}")
-async def read_item(request: Request, item_id: str, q: Optional[str] = None, short: bool = False):
+async def read_item2(request: Request, item_id: str, q: Optional[str] = None, short: bool = False):
 
     item = {"item_id": item_id}
 
@@ -55,7 +55,7 @@ async def read_user_item(
     return item
 
 @app.get("/items2/{item_id}")
-async def read_user_item(item_id: str, needy: str, skip: int = 0, limit: Optional[int] = None):
+async def read_user_item2(item_id: str, needy: str, skip: int = 0, limit: Optional[int] = None):
     item = {
         "item_id": item_id,
         "needy": needy,
