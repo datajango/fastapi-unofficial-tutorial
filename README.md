@@ -374,7 +374,7 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ### Test Upload One File at a Time
 1. Pick the ex18_request_files launch target from the VS Code Debug Launch drop-down
-![Select the ex18_request_files debuy launch configuration](fastapi_tutorial\ex18_request_files\ex18_request_files_debug.png)
+![Select the ex18_request_files debug launch configuration](fastapi_tutorial/ex18_request_files/ex18_request_files_debug.png)
 1. The launch configuration is shown below:
     ```
     {
@@ -388,14 +388,14 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
     }
     ```
 1. Click the green triangle launch button
-![Launch](fastapi_tutorial\ex18_request_files\ex18_request_files_run.png)
+![Launch](fastapi_tutorial/ex18_request_files/ex18_request_files_run.png)
 1. The FastAPI server should start up and messages will appear in the terminal.
-![FastAPI Server Running](fastapi_tutorial\ex18_request_files\ex18_request_files_running.png)
+![FastAPI Server Running](fastapi_tutorial/ex18_request_files/ex18_request_files_running.png)
 1. Test with [httpie](https://httpie.io/)
     1. cd to the images folder
     1. http --form POST http://localhost:8000/files/ file@PIA09258_callisto.jpg
     1. I set a break point on line 9 of
-    ![STopped at a break point](fastapi_tutorial\ex18_request_files\ex18_request_files_stopped_after_post_one_file.png)
+    ![STopped at a break point](./fastapi_tutorial/ex18_request_files/ex18_request_files_stopped_after_post_one_file.png)
     1. The response was
     ```
     HTTP/1.1 200 OK
@@ -447,7 +447,7 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 1. Test with a web browser
     `. Open a browser to [http://localhost:8000/many/](http://localhost:8000/many/)
     1. The webpage to upload one file should be displayed.
-    ![Upload multiple files at once.](fastapi_tutorial\ex18_request_files\ex18_request_files_upload_many_form.png)
+    ![Upload multiple files at once.](./fastapi_tutorial/ex18_request_files/ex18_request_files_upload_many_form.png)
     1. Select files to be uploaded
     1. It works!
     ```
