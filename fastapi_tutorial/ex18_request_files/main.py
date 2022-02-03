@@ -23,7 +23,6 @@ async def create_upload_file(file: UploadFile):
 async def create_files(files: List[bytes] = File(...)):
     return {"file_sizes": [len(file) for file in files]}
 
-
 @app.post("/uploadfiles/many/")
 async def create_upload_files(files: List[UploadFile]):
     return {"filenames": [file.filename for file in files]}
