@@ -205,51 +205,51 @@ Running uvicorn 0.15.0 with CPython 3.9.7 on Windows
 
 ## ex02_path_parameters
 
-    ```
-    pytest -vv fastapi_tutorial\ex02_path_parameters\test_ex02_path_parameters.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex02_path_parameters\test_ex02_path_parameters.py
+```
 
 ## ex03_query_parameters
 
-    ```
-    pytest -vv fastapi_tutorial\ex03_query_parameters\test_ex03_query_parameters.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex03_query_parameters\test_ex03_query_parameters.py
+```
 
 ## ex04_request_body
 
-    ```
-    pytest -vv fastapi_tutorial\ex04_request_body\test_ex04_request_body.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex04_request_body\test_ex04_request_body.py
+```
 
 ## ex05_query_parameters_and_string_validations
 
-    ```
-    pytest -vv fastapi_tutorial\ex05_query_parameters_and_string_validations\test_ex05_query_parameters_and_string_validations.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex05_query_parameters_and_string_validations\test_ex05_query_parameters_and_string_validations.py
+```
 
 ## ex06_path_parameters_and_numeric_validations
 
-    ```
-    pytest -vv fastapi_tutorial\ex06_path_parameters_and_numeric_validations\test_ex06_path_parameters_and_numeric_validations.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex06_path_parameters_and_numeric_validations\test_ex06_path_parameters_and_numeric_validations.py
+```
 
 ## ex07_body_multiple_parameters
 
-    ```
-    pytest -vv fastapi_tutorial\ex07_body_multiple_parameters\test_ex07_body_multiple_parameters.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex07_body_multiple_parameters\test_ex07_body_multiple_parameters.py
+```
 
 ## ex08_body_fields
 
-    ```
-    pytest -vv fastapi_tutorial\ex08_body_fields\test_ex08_body_fields.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex08_body_fields\test_ex08_body_fields.py
+```
 
 ## ex09_body_nested_models
 
-    ```
-    pytest -vv fastapi_tutorial\ex09_body_nested_models\test_ex09_body_nested_models.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex09_body_nested_models\test_ex09_body_nested_models.py
+```
 
 ## ex10_declare_request_example_data
 
@@ -275,9 +275,9 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ## ex12_cookie_parameters
 
-    ```
-    pytest -vv fastapi_tutorial\ex12_cookie_parameters\test_ex12_cookie_parameters.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex12_cookie_parameters\test_ex12_cookie_parameters.py
+```
 
 ## ex13_header_parameters
 
@@ -290,7 +290,9 @@ pytest -vv fastapi_tutorial\ex13_header_parameters\test_ex13_header_parameters.p
 ```
 http GET http://127.0.0.1:8000/items2/ X-Token:foo
 ```
-    Returns
+
+Returns
+
 ```
 HTTP/1.1 200 OK
 content-length: 26
@@ -303,7 +305,7 @@ server: uvicorn
         "foo"
     ]
 }
-    ```
+```
 
 ```
 http GET http://127.0.0.1:8000/items2/ X-Token:foo X-Token:bar
