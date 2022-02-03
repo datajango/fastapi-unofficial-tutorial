@@ -91,6 +91,15 @@
       "cwd": "${workspaceFolder}/fastapi_tutorial/ex13_header_parameters",
       "args": ["main:app", "--reload"],
       "jinja": true
+    },
+    {
+      "name": "ex18_request_files",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/ex18_request_files",
+      "args": ["main:app", "--reload"],
+      "jinja": true
     }
   ]
 }

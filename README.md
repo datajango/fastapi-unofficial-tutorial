@@ -363,3 +363,93 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
     pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
     ```
 
+## ex18_request_files
+
+1. [Request Files](https://fastapi.tiangolo.com/tutorial/request-files/)
+1. To run unit tests.
+    ```
+    pytest -vv fastapi_tutorial\ex18_request_files\test_ex18_request_files.py
+    ```
+1. [MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
+
+### Test Upload One File at a Time
+1. Pick the ex18_request_files launch target from the VS Code Debug Launch drop-down
+![Select the ex18_request_files debuy launch configuration](fastapi_tutorial\ex18_request_files\ex18_request_files_debug.png)
+1. The launch configuration is shown below:
+    ```
+    {
+        "name": "ex18_request_files",
+        "type": "python",
+        "request": "launch",
+        "module": "uvicorn",
+        "cwd": "${workspaceFolder}/fastapi_tutorial/ex18_request_files",
+        "args": ["main:app", "--reload"],
+        "jinja": true
+    }
+    ```
+1. Click the green triangle launch button
+![Launch](fastapi_tutorial\ex18_request_files\ex18_request_files_run.png)
+1. The FastAPI server should start up and messages will appear in the terminal.
+![FastAPI Server Running](fastapi_tutorial\ex18_request_files\ex18_request_files_running.png)
+1. Test with [httpie](https://httpie.io/)
+    1. cd to the images folder
+    1. http --form POST http://localhost:8000/files/ file@PIA09258_callisto.jpg
+    1. I set a break point on line 9 of
+    ![STopped at a break point](fastapi_tutorial\ex18_request_files\ex18_request_files_stopped_after_post_one_file.png)
+    1. The response was
+    ```
+    HTTP/1.1 200 OK
+    content-length: 19
+    content-type: application/json
+    date: Wed, 02 Feb 2022 22:49:47 GMT
+    server: uvicorn
+
+    {
+        "file_size": 10603
+    }
+    ```
+    1. This matches the file size.
+    ![File Properties Dialog](fastapi_tutorial\ex18_request_files\ex18_request_files_file_properties.png)
+    1. It worked!
+1. Test with a web browser
+    `. Open a browser to [http://localhost:8000/one](http://localhost:8000/one)
+    1. The webpage to upload one file should be displayed.
+    ![Upload one file at a time](fastapi_tutorial\ex18_request_files\ex18_request_files_one.png)
+    1. I have downloaded some public domain images from [publicdomainreview.org](https://publicdomainreview.org/collection/mont-blanc-ascent) in a folder names "images", select one of those or your own file to upload.
+    Also some NASA images from [NASA](https://photojournal.jpl.nasa.gov/catalog/PIA00600) are there.
+    1. upload a file
+    ![upload a file](fastapi_tutorial\ex18_request_files\ex18_request_files_upload_one.png)
+    1. It works!
+    ![Upload One File Success](fastapi_tutorial\ex18_request_files\ex18_request_files_upload_one_success.png)
+
+### Upload Multiple Files
+1. Test with [httpie](https://httpie.io/)
+    1. cd to the images folder
+    1. http --form POST http://localhost:8000/files/many/ files@PIA09258_callisto.jpg files@PIA00600_modest.jpg
+    1. I set a break point on line 9 of
+    ![STopped at a break point](fastapi_tutorial\ex18_request_files\ex18_request_files_stopped_after_post_one_file.png)
+    1. The response was
+    ```
+    HTTP/1.1 200 OK
+    content-length: 28
+    content-type: application/json
+    date: Thu, 03 Feb 2022 01:53:54 GMT
+    server: uvicorn
+
+    {
+        "file_sizes": [
+            10603,
+            31793
+        ]
+    }
+    ```
+    1. It worked!
+1. Test with a web browser
+    `. Open a browser to [http://localhost:8000/many/](http://localhost:8000/many/)
+    1. The webpage to upload one file should be displayed.
+    ![Upload multiple files at once.](fastapi_tutorial\ex18_request_files\ex18_request_files_upload_many_form.png)
+    1. Select files to be uploaded
+    1. It works!
+    ```
+    {"file_sizes":[60080,59073,57081,48237]}
+    ```
