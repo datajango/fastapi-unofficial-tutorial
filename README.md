@@ -341,27 +341,27 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ## ex14_response_model
 
-    ```
-    pytest -vv fastapi_tutorial\ex14_response_model\test_ex14_response_model.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex14_response_model\test_ex14_response_model.py
+```
 
 ## ex15_extra_models
 
-    ```
-    pytest -vv fastapi_tutorial\ex15_extra_models\test_ex15_extra_models.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex15_extra_models\test_ex15_extra_models.py
+```
 
 ## ex16_response_status_code
 
-    ```
-    pytest -vv fastapi_tutorial\ex16_response_status_code\test_ex16_response_status_codes.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex16_response_status_code\test_ex16_response_status_codes.py
+```
 
 ## ex17_form_data
 
-    ```
-    pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
-    ```
+```
+pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
+```
 
 ## ex18_request_files
 
