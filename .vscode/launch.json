@@ -100,6 +100,24 @@
       "cwd": "${workspaceFolder}/fastapi_tutorial/ex18_request_files",
       "args": ["main:app", "--reload"],
       "jinja": true
+    },
+    {
+      "name": "ex21_path_operation_configuration",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/ex21_path_operation_configuration",
+      "args": ["main:app", "--reload"],
+      "jinja": true
+    },
+    {
+      "name": "ex32_static_files",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "cwd": "${workspaceFolder}/fastapi_tutorial/ex32_static_files",
+      "args": ["main:app", "--reload"],
+      "jinja": true
     }
   ]
 }

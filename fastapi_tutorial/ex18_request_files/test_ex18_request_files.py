@@ -3,8 +3,6 @@ from fastapi.testclient import TestClient
 from fastapi_tutorial.ex18_request_files.main import app
 import os
 
-
-
 client = TestClient(app)
 
 def test_files():

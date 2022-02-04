@@ -4,6 +4,12 @@ By Anthony Leotta
 
 In this repo, I will work through the (Official FastAPI Tutorial](https://fastapi.tiangolo.com/tutorial/) by creating unit tests for each topic described.  I may stray from the Official Tutorial to satisfy my own curiosity.
 
+<b>2/3/2022 Update:</b>
+
+Sometimes is pays to read the source to a project. In the case of FastAPI, every example in the online documentation can be found in a folder named "docs_src", and the unit tests for then are in "tests\test_tutorial".  Now I still feel I learned alot from created my repo, but after seeing the FastAPI tutorial code and pytest unit tests, I realized that using unit-tests as a learning tool really works.
+
+I think looking at code is one thing, but understanding code enough to be able to write unit tests solidifies the concepts on a whole different level.  I am going to continue with this repo, even though I am basically doing the same thing that has already been done in FastAPI itself (and probably better).
+
 ## Setup
 
 1. Install [httpie](https://httpie.io/)
@@ -40,7 +46,7 @@ Running uvicorn 0.15.0 with CPython 3.9.7 on Windows
 
 1. Just run pytest, that's it.
     ```
-    pytest
+    pytest -vv --disable-warnings
     ```
 
 1. To run just the fastapi_tutorial tests
@@ -455,3 +461,59 @@ pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
     ```
     {"file_sizes":[60080,59073,57081,48237]}
     ```
+
+## ex19_request_forms_and_files
+
+1. [Request Forms and Files](https://fastapi.tiangolo.com/tutorial/request-forms-and-files/)
+
+1. To run unit tests.
+```
+pytest -vv fastapi_tutorial\ex19_request_forms_and_files\test_ex19_request_forms_and_files.py
+```
+
+## ex20_handling_errors
+
+1. [Handling Errors](https://fastapi.tiangolo.com/tutorial/handling-errors/)
+
+1. To run unit tests.
+```
+pytest -vv fastapi_tutorial\ex20_handling_errors\test_ex20_handling_errors.py
+pytest -vv fastapi_tutorial\ex20_handling_errors\test_ex20_handling_errors_plain_exception.py
+```
+
+
+
+## ex21_path_operation_configuration
+
+1. [Path Operation Configuration](https://fastapi.tiangolo.com/tutorial/path-operation-configuration/)
+
+1. To run unit tests.
+```
+pytest -vv fastapi_tutorial\ex21_path_operation_configuration\test_ex21_path_operation_configuration.py
+```
+1. To view API docs
+    1. Start server
+        1. I use a VS Code Launch Configuration named: ex21_path_operation_configuration
+    1. View [Interactive API docs]( http://127.0.0.1:8000/docs/)
+    1. View [Alternative Interactive API docs]( http://127.0.0.1:8000/redoc/)
+    1. View [OpenAPI Specification and JSON Schema](http://127.0.0.1:8000/openapi.json)
+
+
+## ex22_json_compatible_encoder
+
+1. [JSON Compatible Encoder](https://fastapi.tiangolo.com/tutorial/encoder/)
+
+1. To run unit tests.
+```
+pytest -vv fastapi_tutorial\ex22_json_compatible_encoder\test_ex22_json_compatible_encoder.py
+```
+
+## ex23_body_updates
+
+1. [Body - Updates](https://fastapi.tiangolo.com/tutorial/body-updates/)
+
+1. To run unit tests.
+```
+pytest -vv fastapi_tutorial\ex23_body_updates\test_ex23_body_updates.py
+```
+
