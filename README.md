@@ -6,9 +6,7 @@ In this repo, I will work through the (Official FastAPI Tutorial](https://fastap
 
 <b>2/3/2022 Update:</b>
 
-Sometimes is pays to read the source to a project. In the case of FastAPI, every example in the online documentation can be found in a folder named "docs_src", and the unit tests for then are in "tests\test_tutorial".  Now I still feel I learned alot from created my repo, but after seeing the FastAPI tutorial code and pytest unit tests, I realized that using unit-tests as a learning tool really works.
-
-I think looking at code is one thing, but understanding code enough to be able to write unit tests solidifies the concepts on a whole different level.  I am going to continue with this repo, even though I am basically doing the same thing that has already been done in FastAPI itself (and probably better).
+Sometimes is pays to read the source to a project. In the case of FastAPI, every example in the online documentation can be found in a folder named "docs_src", and the unit tests for then are in "tests\test_tutorial".  I learned alot from created my repo and creating all the unit test from scratch. After seeing the FastAPI tutorial code and pytest unit tests, I realized that using unit-tests as a learning tool really works.   I think looking at code is one thing, but understanding code enough to be able to write unit tests solidifies the concepts on a whole different level.  I am going to continue with this repo, even though I am basically doing the same thing that has already been done in FastAPI itself (and probably better).
 
 ## Setup
 
