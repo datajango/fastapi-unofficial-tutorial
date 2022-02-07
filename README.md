@@ -69,6 +69,7 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## Testing each server with httpie
 
+1. [First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/)
 1. cd fastapi_tutorial
 1. cd ex01_first_steps
 1. uvicorn main:app --reload
@@ -210,6 +211,7 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## ex02_path_parameters
 
+1. [Path Parameters](https://fastapi.tiangolo.com/tutorial/path-params/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex02_path_parameters\test_ex02_path_parameters.py
@@ -217,6 +219,7 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## ex03_query_parameters
 
+1. [Query Parameters](https://fastapi.tiangolo.com/tutorial/query-params/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex03_query_parameters\test_ex03_query_parameters.py
@@ -224,6 +227,7 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## ex04_request_body
 
+1. [Request Body](https://fastapi.tiangolo.com/tutorial/body/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex04_request_body\test_ex04_request_body.py
@@ -231,6 +235,7 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## ex05_query_parameters_and_string_validations
 
+1. [Query Parameters and String Validations](https://fastapi.tiangolo.com/tutorial/query-params-str-validations/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex05_query_parameters_and_string_validations\test_ex05_query_parameters_and_string_validations.py
@@ -238,6 +243,7 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## ex06_path_parameters_and_numeric_validations
 
+1. [Path Parameters and Numeric Validations](https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex06_path_parameters_and_numeric_validations\test_ex06_path_parameters_and_numeric_validations.py
@@ -245,6 +251,7 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## ex07_body_multiple_parameters
 
+1. [Body - Multiple Parameters](https://fastapi.tiangolo.com/tutorial/body-multiple-params/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex07_body_multiple_parameters\test_ex07_body_multiple_parameters.py
@@ -252,6 +259,7 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## ex08_body_fields
 
+1. [Body - Fields](https://fastapi.tiangolo.com/tutorial/body-fields/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex08_body_fields\test_ex08_body_fields.py
@@ -259,6 +267,7 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## ex09_body_nested_models
 
+1. [Body - Nested Models](https://fastapi.tiangolo.com/tutorial/body-nested-models/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex09_body_nested_models\test_ex09_body_nested_models.py
@@ -266,6 +275,7 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## ex10_declare_request_example_data
 
+1. [Declare Request Example Data](https://fastapi.tiangolo.com/tutorial/schema-extra-example/)
 1. There are no unit test for this section
 1. run server
 1. visit [Docs](http://127.0.0.1:8000/docs#/)
@@ -274,6 +284,7 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## ex11_extra_data_types
 
+1. [Extra Data Types](https://fastapi.tiangolo.com/tutorial/extra-data-types/)
 1. This is a deceptively deep section.  FastAPI's abilities to use different datatypes relieve just how much the Python language itself is in flux.  The differences between Python 3.5 to Python 3.11 are different enough to force the FastAPI documentation to include in some cases three versions of the same FastAPi code.
 
 1. I am going with Python 3.6 and 3.9.  Python 3.10 and 3.11 seem stable enough but I cab only fight some many battles at once.
@@ -289,6 +300,7 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ## ex12_cookie_parameters
 
+1. [Cookie Parameters](https://fastapi.tiangolo.com/tutorial/cookie-params/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex12_cookie_parameters\test_ex12_cookie_parameters.py
@@ -296,6 +308,7 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ## ex13_header_parameters
 
+1. [Header Parameters](https://fastapi.tiangolo.com/tutorial/header-params/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex13_header_parameters\test_ex13_header_parameters.py
@@ -361,6 +374,7 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ## ex14_response_model
 
+1. [Response Model](https://fastapi.tiangolo.com/tutorial/response-model/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex14_response_model\test_ex14_response_model.py
@@ -368,6 +382,7 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ## ex15_extra_models
 
+1. [Extra Models](https://fastapi.tiangolo.com/tutorial/extra-models/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex15_extra_models\test_ex15_extra_models.py
@@ -375,6 +390,7 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ## ex16_response_status_code
 
+1. [Response Status Code](https://fastapi.tiangolo.com/tutorial/response-status-code/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex16_response_status_code\test_ex16_response_status_codes.py
@@ -382,6 +398,7 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ## ex17_form_data
 
+1. [Form Data](https://fastapi.tiangolo.com/tutorial/request-forms/)
 1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
