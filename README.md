@@ -271,7 +271,8 @@ I am going with Python 3.6 and 3.9.  Python 3.10 and 3.11 seem stable enough but
 I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 1. [Extra Data Types](https://fastapi.tiangolo.com/tutorial/extra-data-types/)
-1. Runninng the unit tests
+
+1. Running the unit tests
 
     ```
     pytest -vv fastapi_tutorial\ex11_extra_data_types\test_ex11_extra_data_types.py
@@ -279,21 +280,23 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ## ex12_cookie_parameters
 
-```
-pytest -vv fastapi_tutorial\ex12_cookie_parameters\test_ex12_cookie_parameters.py
-```
+1. Running the unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex12_cookie_parameters\test_ex12_cookie_parameters.py
+    ```
 
 ## ex13_header_parameters
 
-```
-pytest -vv fastapi_tutorial\ex13_header_parameters\test_ex13_header_parameters.py
-```
+1. Running the unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex13_header_parameters\test_ex13_header_parameters.py
+    ```
 
-    Since the TestClient does not allow for duplicate headers to be sent, I will test using httpie.
+1. Since the TestClient does not allow for duplicate headers to be sent, I will test using httpie.
 
-```
-http GET http://127.0.0.1:8000/items2/ X-Token:foo
-```
+    ```
+    http GET http://127.0.0.1:8000/items2/ X-Token:foo
+    ```
 
 Returns
 
@@ -465,19 +468,19 @@ pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
 1. [Request Forms and Files](https://fastapi.tiangolo.com/tutorial/request-forms-and-files/)
 
 1. To run unit tests.
-```
-pytest -vv fastapi_tutorial\ex19_request_forms_and_files\test_ex19_request_forms_and_files.py
-```
+    ```
+    pytest -vv fastapi_tutorial\ex19_request_forms_and_files\test_ex19_request_forms_and_files.py
+    ```
 
 ## ex20_handling_errors
 
 1. [Handling Errors](https://fastapi.tiangolo.com/tutorial/handling-errors/)
 
 1. To run unit tests.
-```
-pytest -vv fastapi_tutorial\ex20_handling_errors\test_ex20_handling_errors.py
-pytest -vv fastapi_tutorial\ex20_handling_errors\test_ex20_handling_errors_plain_exception.py
-```
+    ```
+    pytest -vv fastapi_tutorial\ex20_handling_errors\test_ex20_handling_errors.py
+    pytest -vv fastapi_tutorial\ex20_handling_errors\test_ex20_handling_errors_plain_exception.py
+    ```
 
 
 
@@ -486,9 +489,9 @@ pytest -vv fastapi_tutorial\ex20_handling_errors\test_ex20_handling_errors_plain
 1. [Path Operation Configuration](https://fastapi.tiangolo.com/tutorial/path-operation-configuration/)
 
 1. To run unit tests.
-```
-pytest -vv fastapi_tutorial\ex21_path_operation_configuration\test_ex21_path_operation_configuration.py
-```
+    ```
+    pytest -vv fastapi_tutorial\ex21_path_operation_configuration\test_ex21_path_operation_configuration.py
+    ```
 1. To view API docs
     1. Start server
         1. I use a VS Code Launch Configuration named: ex21_path_operation_configuration
@@ -502,16 +505,54 @@ pytest -vv fastapi_tutorial\ex21_path_operation_configuration\test_ex21_path_ope
 1. [JSON Compatible Encoder](https://fastapi.tiangolo.com/tutorial/encoder/)
 
 1. To run unit tests.
-```
-pytest -vv fastapi_tutorial\ex22_json_compatible_encoder\test_ex22_json_compatible_encoder.py
-```
+    ```
+    pytest -vv fastapi_tutorial\ex22_json_compatible_encoder\test_ex22_json_compatible_encoder.py
+    ```
 
 ## ex23_body_updates
 
 1. [Body - Updates](https://fastapi.tiangolo.com/tutorial/body-updates/)
 
 1. To run unit tests.
-```
-pytest -vv fastapi_tutorial\ex23_body_updates\test_ex23_body_updates.py
-```
+    ```
+    pytest -vv fastapi_tutorial\ex23_body_updates\test_ex23_body_updates.py
+    ```
 
+## ex26_middleware
+
+1. [Middleware](https://fastapi.tiangolo.com/tutorial/middleware/)
+
+1. To run unit tests.
+    ```
+    pytest -vv fastapi_tutorial\ex26_middleware\test_ex26_middleware.py
+    ```
+
+## ex27_cors
+
+1. [CORS (Cross-Origin Resource Sharing)](https://fastapi.tiangolo.com/tutorial/cors/)
+
+1. To run unit tests.
+    ```
+    pytest -vv fastapi_tutorial\ex27_cors\test_ex27_cors.py
+    ```
+
+## ex28_sql_databases
+
+1. [SQL (Relational) Databases](https://fastapi.tiangolo.com/tutorial/sql-databases/)
+
+1. To run unit tests.
+    ```
+    pytest -vv fastapi_tutorial\ex28_sql_databases\test_ex28_sql_databases.py
+    ```
+
+## ex29_bigger_applications_multiple_files
+
+## ex30_background_tasks
+
+## ex31_metadata_and_docs_urls
+
+## ex32_static_files
+
+## ex33_testing
+
+## ex34_debugging
