@@ -12,33 +12,34 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 1. Install [httpie](https://httpie.io/)
 
-```
-http --verison
-```
+    ```
+    http --verison
+    ```
 1. Follow Tony's Tricks to [setup a fresh anaconda environments](https://github.com/datajango/Home#how-to-create-a-anaconda-python-environment) called fastapi39.
 
 1. Activate Python Environment
 
-```
-conda activate fastapi39
-```
+    ```
+    conda activate fastapi39
+    ```
 
 1. Install package dependencies.
 
-```
-pip install -r requirements.txt
-```
+    ```
+    pip install -r requirements.txt
+    ```
 
 1. Test if uvicorn is installed correctly.
 
-```
-uvicorn --version
-```
+    ```
+    uvicorn --version
+    ```
 
-If it is, you will see something like this, the version  number may vary:
-```
-Running uvicorn 0.15.0 with CPython 3.9.7 on Windows
-```
+1. If it is, you will see something like this, the version  number may vary:
+
+    ```
+    Running uvicorn 0.15.0 with CPython 3.9.7 on Windows
+    ```
 
 ## Running the Tests using Pytest
 
@@ -63,7 +64,7 @@ Running uvicorn 0.15.0 with CPython 3.9.7 on Windows
     pytest -vv --cov-report html  --cov=typing_playground --cov-append
     ```
 
-    Which results in a coverage report of all unit tests.
+1. Which results in a coverage report of all unit tests.
 
 
 ## Testing each server with httpie
@@ -209,27 +210,31 @@ Running uvicorn 0.15.0 with CPython 3.9.7 on Windows
 
 ## ex02_path_parameters
 
-```
-pytest -vv fastapi_tutorial\ex02_path_parameters\test_ex02_path_parameters.py
-```
+1. Run Unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex02_path_parameters\test_ex02_path_parameters.py
+    ```
 
 ## ex03_query_parameters
 
-```
-pytest -vv fastapi_tutorial\ex03_query_parameters\test_ex03_query_parameters.py
-```
+1. Run Unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex03_query_parameters\test_ex03_query_parameters.py
+    ```
 
 ## ex04_request_body
 
-```
-pytest -vv fastapi_tutorial\ex04_request_body\test_ex04_request_body.py
-```
+1. Run Unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex04_request_body\test_ex04_request_body.py
+    ```
 
 ## ex05_query_parameters_and_string_validations
 
-```
-pytest -vv fastapi_tutorial\ex05_query_parameters_and_string_validations\test_ex05_query_parameters_and_string_validations.py
-```
+1. Run Unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex05_query_parameters_and_string_validations\test_ex05_query_parameters_and_string_validations.py
+    ```
 
 ## ex06_path_parameters_and_numeric_validations
 
@@ -298,44 +303,46 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
     http GET http://127.0.0.1:8000/items2/ X-Token:foo
     ```
 
-Returns
+1. Returns
 
-```
-HTTP/1.1 200 OK
-content-length: 26
-content-type: application/json
-date: Wed, 02 Feb 2022 14:43:43 GMT
-server: uvicorn
+    ```
+    HTTP/1.1 200 OK
+    content-length: 26
+    content-type: application/json
+    date: Wed, 02 Feb 2022 14:43:43 GMT
+    server: uvicorn
 
-{
-    "X-Token values": [
-        "foo"
-    ]
-}
-```
+    {
+        "X-Token values": [
+            "foo"
+        ]
+    }
+    ```
 
-```
-http GET http://127.0.0.1:8000/items2/ X-Token:foo X-Token:bar
-```
-    Returns
-```
-HTTP/1.1 200 OK
-content-length: 32
-content-type: application/json
-date: Wed, 02 Feb 2022 14:44:57 GMT
-server: uvicorn
+1.
+    ```
+    http GET http://127.0.0.1:8000/items2/ X-Token:foo X-Token:bar
+    ```
 
-{
-    "X-Token values": [
-        "foo",
-        "bar"
-    ]
-}
-```
+1. Returns
+    ```
+    HTTP/1.1 200 OK
+    content-length: 32
+    content-type: application/json
+    date: Wed, 02 Feb 2022 14:44:57 GMT
+    server: uvicorn
 
-    To fix this bug the fastapi39\Lib\site-packages\requests\models.py lines 446 to 455 need to look for either a dictionary or a list, because dictionaries do not allow duplicate keys.
+    {
+        "X-Token values": [
+            "foo",
+            "bar"
+        ]
+    }
+    ```
 
-```
+1. To fix this bug the fastapi39\Lib\site-packages\requests\models.py lines 446 to 455 need to look for either a dictionary or a list, because dictionaries do not allow duplicate keys.
+
+    ```
     def prepare_headers(self, headers):
         """Prepares the given HTTP headers."""
 
@@ -346,7 +353,7 @@ server: uvicorn
                 check_header_validity(header)
                 name, value = header
                 self.headers[to_native_string(name)] = value
-```
+    ```
 
 ## ex14_response_model
 
