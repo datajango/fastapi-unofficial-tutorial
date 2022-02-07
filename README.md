@@ -210,55 +210,59 @@ Sometimes is pays to read the source to a project. In the case of FastAPI, every
 
 ## ex02_path_parameters
 
-1. Run Unit tests
+1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex02_path_parameters\test_ex02_path_parameters.py
     ```
 
 ## ex03_query_parameters
 
-1. Run Unit tests
+1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex03_query_parameters\test_ex03_query_parameters.py
     ```
 
 ## ex04_request_body
 
-1. Run Unit tests
+1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex04_request_body\test_ex04_request_body.py
     ```
 
 ## ex05_query_parameters_and_string_validations
 
-1. Run Unit tests
+1. Running the unit tests
     ```
     pytest -vv fastapi_tutorial\ex05_query_parameters_and_string_validations\test_ex05_query_parameters_and_string_validations.py
     ```
 
 ## ex06_path_parameters_and_numeric_validations
 
-```
-pytest -vv fastapi_tutorial\ex06_path_parameters_and_numeric_validations\test_ex06_path_parameters_and_numeric_validations.py
-```
+1. Running the unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex06_path_parameters_and_numeric_validations\test_ex06_path_parameters_and_numeric_validations.py
+    ```
 
 ## ex07_body_multiple_parameters
 
-```
-pytest -vv fastapi_tutorial\ex07_body_multiple_parameters\test_ex07_body_multiple_parameters.py
-```
+1. Running the unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex07_body_multiple_parameters\test_ex07_body_multiple_parameters.py
+    ```
 
 ## ex08_body_fields
 
-```
-pytest -vv fastapi_tutorial\ex08_body_fields\test_ex08_body_fields.py
-```
+1. Running the unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex08_body_fields\test_ex08_body_fields.py
+    ```
 
 ## ex09_body_nested_models
 
-```
-pytest -vv fastapi_tutorial\ex09_body_nested_models\test_ex09_body_nested_models.py
-```
+1. Running the unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex09_body_nested_models\test_ex09_body_nested_models.py
+    ```
 
 ## ex10_declare_request_example_data
 
@@ -270,9 +274,9 @@ pytest -vv fastapi_tutorial\ex09_body_nested_models\test_ex09_body_nested_models
 
 ## ex11_extra_data_types
 
-This is a deceptively deep section.  FastAPI's abilities to use different datatypes relieve just how much the Python language itself is in flux.  The differences between Python 3.5 to Python 3.11 are different enough to force the FastAPI documentation to include in some cases three versions of the same FastAPi code.
+1. This is a deceptively deep section.  FastAPI's abilities to use different datatypes relieve just how much the Python language itself is in flux.  The differences between Python 3.5 to Python 3.11 are different enough to force the FastAPI documentation to include in some cases three versions of the same FastAPi code.
 
-I am going with Python 3.6 and 3.9.  Python 3.10 and 3.11 seem stable enough but I cab only fight some many battles at once.
+1. I am going with Python 3.6 and 3.9.  Python 3.10 and 3.11 seem stable enough but I cab only fight some many battles at once.
 I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 1. [Extra Data Types](https://fastapi.tiangolo.com/tutorial/extra-data-types/)
@@ -319,7 +323,7 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
     }
     ```
 
-1.
+1. Sendc duplicate header
     ```
     http GET http://127.0.0.1:8000/items2/ X-Token:foo X-Token:bar
     ```
@@ -357,27 +361,31 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ## ex14_response_model
 
-```
-pytest -vv fastapi_tutorial\ex14_response_model\test_ex14_response_model.py
-```
+1. Running the unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex14_response_model\test_ex14_response_model.py
+    ```
 
 ## ex15_extra_models
 
-```
-pytest -vv fastapi_tutorial\ex15_extra_models\test_ex15_extra_models.py
-```
+1. Running the unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex15_extra_models\test_ex15_extra_models.py
+    ```
 
 ## ex16_response_status_code
 
-```
-pytest -vv fastapi_tutorial\ex16_response_status_code\test_ex16_response_status_codes.py
-```
+1. Running the unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex16_response_status_code\test_ex16_response_status_codes.py
+    ```
 
 ## ex17_form_data
 
-```
-pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
-```
+1. Running the unit tests
+    ```
+    pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
+    ```
 
 ## ex18_request_files
 
@@ -389,6 +397,7 @@ pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
 1. [MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 
 ### Test Upload One File at a Time
+
 1. Pick the ex18_request_files launch target from the VS Code Debug Launch drop-down
 ![Select the ex18_request_files debug launch configuration](./fastapi_tutorial/ex18_request_files/ex18_request_files_debug.png)
 1. The launch configuration is shown below:
@@ -445,30 +454,31 @@ pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
     1. I set a break point on line 9 of
     ![STopped at a break point](./fastapi_tutorial/ex18_request_files/ex18_request_files_stopped_after_post_one_file.png)
     1. The response was
-    ```
-    HTTP/1.1 200 OK
-    content-length: 28
-    content-type: application/json
-    date: Thu, 03 Feb 2022 01:53:54 GMT
-    server: uvicorn
+        ```
+        HTTP/1.1 200 OK
+        content-length: 28
+        content-type: application/json
+        date: Thu, 03 Feb 2022 01:53:54 GMT
+        server: uvicorn
 
-    {
-        "file_sizes": [
-            10603,
-            31793
-        ]
-    }
-    ```
+        {
+            "file_sizes": [
+                10603,
+                31793
+            ]
+        }
+        ```
     1. It worked!
+
 1. Test with a web browser
-    `. Open a browser to [http://localhost:8000/many/](http://localhost:8000/many/)
+    1. Open a browser to [http://localhost:8000/many/](http://localhost:8000/many/)
     1. The webpage to upload one file should be displayed.
     ![Upload multiple files at once.](./fastapi_tutorial/ex18_request_files/ex18_request_files_upload_many_form.png)
     1. Select files to be uploaded
     1. It works!
-    ```
-    {"file_sizes":[60080,59073,57081,48237]}
-    ```
+        ```
+        {"file_sizes":[60080,59073,57081,48237]}
+        ```
 
 ## ex19_request_forms_and_files
 
@@ -489,8 +499,6 @@ pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
     pytest -vv fastapi_tutorial\ex20_handling_errors\test_ex20_handling_errors_plain_exception.py
     ```
 
-
-
 ## ex21_path_operation_configuration
 
 1. [Path Operation Configuration](https://fastapi.tiangolo.com/tutorial/path-operation-configuration/)
@@ -505,7 +513,6 @@ pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
     1. View [Interactive API docs]( http://127.0.0.1:8000/docs/)
     1. View [Alternative Interactive API docs]( http://127.0.0.1:8000/redoc/)
     1. View [OpenAPI Specification and JSON Schema](http://127.0.0.1:8000/openapi.json)
-
 
 ## ex22_json_compatible_encoder
 
@@ -554,12 +561,24 @@ pytest -vv fastapi_tutorial\ex17_form_data\test_ex17_form_data.py
 
 ## ex29_bigger_applications_multiple_files
 
+1. coming soon
+
 ## ex30_background_tasks
+
+1. coming soon
 
 ## ex31_metadata_and_docs_urls
 
+1. coming soon
+
 ## ex32_static_files
+
+1. coming soon
 
 ## ex33_testing
 
+1. coming soon
+
 ## ex34_debugging
+
+1. coming soon
