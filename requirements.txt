@@ -3,3 +3,4 @@ httpie
 pytest
 pytest-cov
 sqlalchemy
+psycopg2-binary

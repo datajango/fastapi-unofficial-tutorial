@@ -582,6 +582,8 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
     ```
     pytest -vv fastapi_tutorial\ex28_sql_databases\test_ex28_sql_databases.py
     ```
+1. The unit tests will create a test.db file, which needs to be deleted after each run.
+    - I need to add a tear down that deletes this file
 
 ## ex29_bigger_applications_multiple_files
 
@@ -745,8 +747,116 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 
 ## Resources
 
-<DL>
-<DT><A HREF="https://testdriven.io/blog/fastapi-graphql/" ADD_DATE="1610179108">Developing an API with FastAPI and GraphQL | TestDriven.io</A>
+### Awesome List
 
-<DT><A HREF="https://github.com/koxudaxi/fastapi-code-generator" ADD_DATE="1620868618" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACrElEQVQ4jW2SzWucVRTGf+fe9847SW2n+WioIdZkJkzGWLMsQvBjpRv1H1BcqSB166aUbgQXLkpEEGnF7ty5Edw0orULtS5DjNOZ5qvEKkMzEUuS6bz33tPFvCNj6LM653LO8/A85wpHUJmbW0QKbwMvAU8BCHpXkZshhK+2mmu3BudloC5UagsfI7wvIsOooqoKID2gqvuqfLFeX7kAdPsEBmZdea74beLcKxoj+R4iPf7BXozBZ9n1jdudN+BOZgEtV5/8pJAW3/JZ90ZU/UiF0yAnVbWpUVvAMLASo7+oUYuFQvrqiRFT2NttLctUtXouleIN62whZNm19dur7wLFiZmzpdbmahvQyWr15L2Dg312dg5n5s5+6lzhvPfZQ59lLyapce+IkSGNkSjaASzQaW2udvrh3Gs07ud2LUqmMVhrzLA4+55RNS+IqsYYO91u+AwIvVz+F3C/DkEffh5i3FdFwSwaEaYUBKT950Z9Ox+MgA4QaL+/22xuCWzl708bwGkv6mMj5XLxiPJRCJOTRYXx3pw6A9wRVRUjpZIZej5Xso+xkAB65lhp0YhM5H9k3ajqrxgD8MAm5sp0tVrLczhqwZ+ZfXbeJckSoGJEUH42MYQvUZXgw5Kq3nRu+I/KMwvLM9X5c/3tqXLtuUpt4WuXyC+CzANRo4audq/Yf9r3d0pjp0atTT7M/OGbxpg9VE5nofPNv+32HsDQ+MgTqXVXRSRV5dAmNo3eL2036tekf7JKbeEngbEY/QcKDzYba7/9Z2B6ulhJj2+LkQljLD5k1zfq8XVY8yY/WVivr7wcNf5oE/e9Mcmt0dnZE/398TR1COMi4n3wlzfqq6/BWheIdiCouLfb+u742KllVP/+q+l/gHYAONgdkdHRxIbgL202fr+aiwLwCG7VPT6fvRxuAAAAAElFTkSuQmCC">GitHub - koxudaxi/fastapi-code-generator: This code generator creates FastAPI app from an openapi file.</A>
-</DL>
+1. <A HREF="https://project-awesome.org/mjhea0/awesome-fastapi">Awesome FastAPI | | Curated list of awesome lists | Project-Awesome.org</A>
+1. <A HREF="https://github.com/mjhea0/awesome-fastapi">mjhea0/awesome-fastapi: A curated list of awesome things related to FastAPI</A>
+1. <A HREF="https://github.com/Kludex/awesome-fastapi-projects">Kludex/awesome-fastapi-projects: List of FastAPI projects!</A>
+
+### Tutorials
+
+1. <A HREF="https://github.com/ChristopherGS/ultimate-fastapi-tutorial">ChristopherGS/ultimate-fastapi-tutorial: The Ultimate FastAPI Tutorial</A>
+
+1. <A HREF="https://calmcode.io/fastapi/hello-world.html">calmcode - learn Fastapi calmly - Hello World</A>
+1. <A HREF="https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-1-hello-world/">The Ultimate FastAPI Tutorial Part 1 - Basic API Endpoints</A>
+1. <A HREF="https://dev.to/fastapitutorial/serving-static-files-in-fastapi-4kjm">Serving Static Files in FastAPI - DEV Community</A>
+1. <A HREF="https://eugeneyan.com/writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/">How to Set Up a HTML App with FastAPI, Jinja, Forms &amp; Templates</A>
+1. <A HREF="https://fastapi.tiangolo.com/">FastAPI</A>
+1. <A HREF="https://fastapi.tiangolo.com/advanced/async-sql-databases/">Async SQL (Relational) Databases - FastAPI</A>
+1. <A HREF="https://fastapi.tiangolo.com/advanced/async-tests/">Async Tests - FastAPI</A>
+1. <A HREF="https://fastapi.tiangolo.com/project-generation/">Project Generation - Template - FastAPI</A>
+1. <A HREF="https://fastapi.tiangolo.com/tutorial/dependencies/">Dependencies - First Steps - FastAPI</A>
+1. <A HREF="https://fastapi.tiangolo.com/tutorial/first-steps/">First Steps - FastAPI</A>
+1. <A HREF="https://fastapi.tiangolo.com/tutorial/testing/">Testing - FastAPI</A>
+
+
+
+1. <A HREF="https://python.plainenglish.io/webnotes-full-stack-python-fastapi-docker-nginx-postgresql-b4a49875e0a2">Create a Full Stack Note-Taking App with Python, FastAPI, Docker and PostgreSQL | by Abhishek | Python in Plain English</A>
+1. <A HREF="https://pythonrepo.com/repo/tiangolo-full-stack-fastapi-postgresql-python-fastapi-utilities">Full stack, modern web application generator. Using FastAPI, PostgreSQL as database, Docker, automatic HTTPS and more. | PythonRepo</A>
+1. <A HREF="https://realpython.com/fastapi-python-web-apis/">Using FastAPI to Build Python Web APIs – Real Python</A>
+1. <A HREF="https://rogulski.it/blog/fastapi-async-db/">rogulski.it | My experience with FastAPI and async database connection</A>
+1. <A HREF="https://stackoverflow.com/questions/63726203/is-it-possible-to-use-fastapi-with-django">api - Is it possible to use FastAPI with Django? - Stack Overflow</A>
+1. <A HREF="https://testdriven.io/blog/fastapi-crud/">Developing and Testing an Asynchronous API with FastAPI and Pytest | TestDriven.io</A>
+1. <A HREF="https://testdriven.io/blog/topics/fastapi/">FastAPI Tutorials | TestDriven.io</A>
+1. <A HREF="https://testdriven.io/courses/tdd-fastapi/">Serving a Machine Learning Model with FastAPI and Docker | TestDriven.io</A>
+1. <A HREF="https://testdriven.io/courses/tdd-fastapi/docker-config/">Test-Driven Development with FastAPI and Docker - Docker Config | TestDriven.io</A>
+1. <A HREF="https://testdriven.io/courses/tdd-fastapi/structure/">Test-Driven Development with FastAPI and Docker - Structure | TestDriven.io</A>
+1. <A HREF="https://towardsai.net/p/programming/fastapi%E2%80%8A-%E2%80%8Athe-spiffy-way-beyond-flask">FastAPI — the spiffy way beyond flask! – Towards AI — The Best of Tech, Science, and Engineering</A>
+1. <A HREF="https://towardsdatascience.com/how-to-build-and-deploy-a-machine-learning-model-with-fastapi-64c505213857">How To Build and Deploy a Machine Learning Model with FastAPI | by Dario Radečić | Towards Data Science</A>
+1. <A HREF="https://training.talkpython.fm/courses/getting-started-with-fastapi">Modern APIs with FastAPI and Python Online Course - [Talk Python Training]</A>
+1. <A HREF="https://www.analyticsvidhya.com/blog/2020/11/fastapi-the-right-replacement-for-flask/">FastAPI vs Flask | Is FastAPI Right Replacement for Flask?</A>
+1. <A HREF="https://www.fastapitutorial.com/blog/fastapi-course/">FastapiTutorial</A>
+1. <A HREF="https://www.jeffastor.com/blog/testing-fastapi-endpoints-with-docker-and-pytest">Testing FastAPI Endpoints with Docker and Pytest | JeffAstor.com</A>
+1. <A HREF="https://www.libhunt.com/compare-fastapi-react-vs-full-stack-fastapi-postgresql">fastapi-react vs full-stack-fastapi-postgresql - compare differences and reviews? | LibHunt</A>
+1. <A HREF="https://www.mybluelinux.com/fastapi-language-translations-i18n-step-by-step/">FastAPI language translations I18n Step by Step - MyBlueLinux.COM</A>
+1. <A HREF="https://www.pythonpodcast.com/fastapi-web-application-framework-episode-259/">Build The Next Generation Of Python Web Applications With FastAPI - The Python Podcast</A>
+1. <A HREF="https://www.youtube.com/watch?v=4IuI8CnmdKY">FastAPI and React Full-stack Application: How to send emails using FastAPI-mail library - YouTube</A>
+1. <A HREF="https://www.youtube.com/watch?v=KVlqN0xNJxo">Getting Started With Python FastAPI - YouTube</A>
+1. <A HREF="https://www.youtube.com/watch?v=bs9tlDFWWdQ">Asyncio: Understanding Async / Await in Python - YouTube</A>
+1. <A HREF="https://www.youtube.com/watch?v=kCggyi_7pHg">Intro to FastAPI - The Best Way to Create APIs in Python? - YouTube</A>
+1. <A HREF="https://www.youtube.com/watch?v=sBVb4IB3O_U">Let&#39;s Build a Fast, Modern Python API with FastAPI - YouTube</A>
+1. <A HREF="https://www.youtube.com/watch?v=t5Bo1Je9EmE">Python Asynchronous Programming - AsyncIO &amp; Async/Await - YouTube</A>
+
+
+### FARM Stack (Full Stack with React and MongoDB)
+
+1. <A HREF="https://2021.pycascades.com/program/talks/introducing-the-farm-stack-fastap-react-mongodb/">Introducing the FARM stack - FastAPI, React, &amp; MongoDB - PyCascades 2021</A>
+1. <A HREF="https://www.freecodecamp.org/news/learn-the-farm-stack-fastapi-reactjs-mongodb/">Learn the FARM Stack! (FastAPI, React, MongoDB)</A>
+1. <A HREF="https://www.mongodb.com/developer/how-to/FARM-Stack-FastAPI-React-MongoDB/">Introducing FARM Stack - FastAPI, React, and MongoDB</A>
+1. <A HREF="https://www.freecoursesites.us/build-full-stack-projects-with-farm-stack/">Build Full-Stack Projects with FARM stack</A>
+1. <A HREF="https://dev.to/bekbrace/farm-stack-fastapi-react-mongodb-3699">FARM STACK [ FastAPI +React+ mongoDB] - DEV Community</A>
+1. <A HREF="https://www.youtube.com/watch?v=OzUzrs8uJl8">FARM Stack Course - FastAPI, React, MongoDB - YouTube</A>
+
+### Full Stack with React
+1. <A HREF="https://www.youtube.com/watch?v=kBbKf9wliuc">FastAPI and React Full-stack Application: Introduction to Project - YouTube</A>
+1. <A HREF="https://dev.indooroutdoor.io/the-poll-app-from-django-tutorial-with-fastapi-and-react-1">Building the Poll App From Django Tutorial With FastAPI And React</A>
+1. <A HREF="https://testdriven.io/blog/fastapi-react/">Developing a Single Page App with FastAPI and React | TestDriven.io</A>
+1. <A HREF="https://www.jeffastor.com/blog/consuming-a-fastapi-backend-from-a-react-frontend">Consuming a FastAPI Backend from a React Frontend | JeffAstor.com</A>
+
+### Full Stack with Vue
+
+1. <A HREF="https://morioh.com/p/4ae02d746ac7">Stubbing Out and Documenting FastAPI, VueJS 3 and Docker Workflow</A>
+1. <A HREF="https://stackoverflow.com/questions/65547199/using-bootstrap-5-with-vue-3">vuejs3 - Using Bootstrap 5 with Vue 3 - Stack Overflow</A>
+1. <A HREF="https://testdriven.io/blog/developing-a-single-page-app-with-fastapi-and-vuejs/">Developing a Single Page App with FastAPI and Vue.js | TestDriven.io</A>
+1. <A HREF="https://github.com/sdairs/vue3-fastapi-oath2-jwt-demo">sdairs/vue3-fastapi-oath2-jwt-demo: This is a Demo project to show how to do OAth2 token auth with FastAPI to Vue3 frontend with JWT (with Postgres)</A>
+1. <A HREF="https://www.youtube.com/watch?v=jVzXUVB2gP0">Vue JS, FastAPI website tutorial (with Apache, certs, environments) - YouTube</A>
+
+### Starter Projects
+
+1. <A HREF="https://pythonawesome.com/a-full-stack-boilerplate-for-fastapi/">A full stack boilerplate for FastAPI</A>
+1. <A HREF="https://pythonrepo.com/repo/Buuntu-fastapi-react-python-fastapi-utilities">🚀 Cookiecutter Template for FastAPI + React Projects. Using PostgreSQL, SQLAlchemy, and Docker | PythonRepo</A>
+1. <A HREF="https://github.com/Buuntu/fastapi-react">Buuntu/fastapi-react: 🚀 Cookiecutter Template for FastAPI + React Projects. Using PostgreSQL, SQLAlchemy, and Docker</A>
+1. <A HREF="https://github.com/isakbosman/full-stack-fastapi-react-postgres-boilerplate">isakbosman/full-stack-fastapi-react-postgres-boilerplate: A full-stack cookiecutter boilerplate using React, Redux, frontend, a FastAPI backend with a PostgreSql database</A>
+1. <A HREF="https://github.com/fastapi-admin/fastapi-admin">fastapi-admin/fastapi-admin: A fast admin dashboard based on FastAPI and TortoiseORM with tabler ui, inspired by Django admin</A>
+
+### Github Projects
+1. <A HREF="https://github.com/ChristopherGS/ultimate-fastapi-tutorial/tree/main/part-9-async">ultimate-fastapi-tutorial/part-9-async at main · ChristopherGS/ultimate-fastapi-tutorial</A>
+1. <A HREF="https://github.com/talkpython/modern-apis-with-fastapi">talkpython/modern-apis-with-fastapi: Course demos and handouts for our Modern APIs with FastAPI course.</A>
+1. <A HREF="https://github.com/testdrivenio/fastapi-tdd-docker">testdrivenio/fastapi-tdd-docker: Test-Driven Development with FastAPI and Docker</A>
+1. <A HREF="https://github.com/tiangolo/fastapi">tiangolo/fastapi: FastAPI framework, high performance, easy to learn, fast to code, ready for production</A>
+1. <A HREF="https://github.com/tiangolo/fastapi/blob/master/pyproject.toml">fastapi/pyproject.toml at master · tiangolo/fastapi</A>
+
+
+### Pydantic
+
+1. <A HREF="https://dev.to/tiangolo/the-future-of-fastapi-and-pydantic-is-bright-3pbm">The Future of FastAPI and Pydantic is Bright - DEV Community</A>
+1. <A HREF="https://www.geeksforgeeks.org/create-custom-datatypes-using-pydantic-module-in-python/">Create custom datatypes using Pydantic module in Python - GeeksforGeeks</A>
+
+### Code Generator
+
+1. <A HREF="https://github.com/koxudaxi/fastapi-code-generator">GitHub - koxudaxi/fastapi-code-generator: This code generator creates FastAPI app from an openapi file.</A>
+
+
+### SQLAlchemy
+
+1. <A HREF="https://testdriven.io/blog/fastapi-sqlmodel/">FastAPI with Async SQLAlchemy, SQLModel, and Alembic | TestDriven.io</A>
+1. <A HREF="https://towardsdatascience.com/build-an-async-python-service-with-fastapi-sqlalchemy-196d8792fa08">Build an async python service with FastAPI &amp; SQLAlchemy | by Michael Azimov | Towards Data Science</A>
+1. <A HREF="https://www.peterspython.com/en/blog/fastapi-sqlalchemy-asynchronous-io-and-back-pressure">FastAPI + SQLAlchemy: Asynchronous IO and Back Pressure | peterspython.com</A>
+1. <A HREF="https://www.reddit.com/r/FastAPI/comments/pi0zdy/best_approach_for_async_sqlalchemy_in_fastapi/">Best approach for async SQLAlchemy in FastAPI : FastAPI</A>
+1. <A HREF="https://gist.github.com/onecrayon/dd4803a5099061fa48d52f2d4bc2396b">async/await FastAPI with SQLAlchemy test</A>
+
+
+### GraphQL
+
+1. <A HREF="https://fastapi.tiangolo.com/advanced/graphql/?h=+graphql">GraphQL - FastAPI</A>
+1. <A HREF="https://testdriven.io/blog/fastapi-graphql/">Developing an API with FastAPI and GraphQL | TestDriven.io</A>

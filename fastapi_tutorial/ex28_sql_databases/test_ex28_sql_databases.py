@@ -12,9 +12,7 @@ engine = create_engine(
 )
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-
 Base.metadata.create_all(bind=engine)
-
 
 def override_get_db():
     try:
@@ -23,11 +21,9 @@ def override_get_db():
     finally:
         db.close()
 
-
 app.dependency_overrides[get_db] = override_get_db
 
 client = TestClient(app)
-
 
 def test_create_user():
     response = client.post(
