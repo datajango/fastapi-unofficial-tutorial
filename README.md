@@ -1,8 +1,15 @@
 # fastapi un-official tutorial
 
+## TL;DR
+
+Need to learn FastAPI, well, fast? This repo shows you how to create unit tests for every tutorial example in the [Official FastAPI documentation](https://fastapi.tiangolo.com/).  The goal of this repo was two-fold, first to learn how to write REST API's in FastAPI and second, how to write unit tests for that REST API.  The third goal was to learn modern Python programming, which includes typing, Pydantic, async/await and Python 3.9 features.
+
+## Preface
+
 By Anthony Leotta
 
 In this repo, I will work through the (Official FastAPI Tutorial](https://fastapi.tiangolo.com/tutorial/) by creating unit tests for each topic described.  I may stray from the Official Tutorial to satisfy my own curiosity.
+
 
 <b>2/3/2022 Update:</b>
 
@@ -599,3 +606,140 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
 ## ex34_debugging
 
 1. coming soon
+
+## ex35_advanced_user_guide_intro
+
+1. coming soon
+
+## ex36_advanced_path_operation_advanced_configuration
+
+1. coming soon
+
+## ex37_advanced_additional_status_codes
+
+1. coming soon
+
+## ex38_advanced_return_a_response_directly
+
+1. coming soon
+
+## ex39_advanced_custom_response_html_stream_file_others
+
+1. coming soon
+
+## ex40_additional_responses_in_openapi
+
+1. coming soon
+
+## ex41_advanced_response_cookies
+
+1. coming soon
+
+## ex42_advanced_response_headers
+
+1. coming soon
+
+## ex43_advanced_response_change_status_code
+
+1. coming soon
+
+## ex44_advanced_advanced_dependencies
+
+1. coming soon
+
+## ex45_advanced_security
+
+1. coming soon
+
+## ex46_advanced_using_the_request_directly
+
+1. coming soon
+
+## ex47_advanced_using_dataclasses
+
+1. coming soon
+
+## ex48_advanced_middleware
+
+1. coming soon
+
+## ex49_advanced_sql_relational_databases_with_peewee
+
+1. coming soon
+
+## ex50_advanced_async_sql_relational_databases
+
+1. coming soon
+
+## ex51_advanced_nosql_distributed__big_data_databases
+
+1. coming soon
+
+## ex52_advanced_sub_applications_mounts
+
+1. coming soon
+
+## ex53_advanced_behind_a_proxy
+
+1. coming soon
+
+## ex54_advanced_templates
+
+1. coming soon
+
+## ex55_advanced_graphql
+
+1. coming soon
+
+## ex56_advanced_websockets
+
+1. coming soon
+
+## ex57_advanced_events_startup_shutdown
+
+1. coming soon
+
+## ex58_advanced_custom_request_and_apiroute_class
+
+1. coming soon
+
+## ex59_advanced_testing_websockets
+
+1. coming soon
+
+## ex61_advanced_testing_dependencies_with_overrides
+
+1. coming soon
+
+## ex62_advanced_testing_a_database
+
+1. coming soon
+
+## ex63_advanced_async_tests
+
+1. coming soon
+
+## ex64_advanced_settings_and_environment_variables
+
+1. coming soon
+
+## ex65_advanced_conditional_openapi
+
+1. coming soon
+
+## ex66_advanced_extending_openapi
+
+1. coming soon
+
+## ex67_advanced_openapi_callbacks
+
+1. coming soon
+
+## ex68_advanced_including_wsgi_flask_django_others
+
+1. coming soon
+
+## ex69_concurrency_and_async_await
+
+1. coming soon
+
