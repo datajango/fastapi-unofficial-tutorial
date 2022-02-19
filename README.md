@@ -584,6 +584,9 @@ I will upgrade this repro to Python 3.11 or 3.12 when the time seems rights.
     ```
 1. The unit tests will create a test.db file, which needs to be deleted after each run.
     - I need to add a tear down that deletes this file
+        - for sqlite this means delete it 
+
+
 
 ## ex29_bigger_applications_multiple_files
 
