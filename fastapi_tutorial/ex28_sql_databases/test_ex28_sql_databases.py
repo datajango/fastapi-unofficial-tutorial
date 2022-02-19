@@ -1,3 +1,4 @@
+import os
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -7,8 +8,11 @@ from fastapi_tutorial.ex28_sql_databases.main import app, get_db
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
 
+if os.path.exists('./test.db'):
+    os.remove('./test.db')
+
 engine = create_engine(
-    SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
+    SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}, echo=True
 )
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
@@ -20,6 +24,7 @@ def override_get_db():
         yield db
     finally:
         db.close()
+        #os.remove('./test.db')
 
 app.dependency_overrides[get_db] = override_get_db
 
